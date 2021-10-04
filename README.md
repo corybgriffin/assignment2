@@ -1,2 +1,2 @@
-Cory Griffin
-cbg18z
+Name: Cory Griffin
+FSUID: cbg18z
