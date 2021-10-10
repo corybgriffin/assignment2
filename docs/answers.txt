@@ -1,0 +1,69 @@
+Date that I went through Git Lab Tutorials: Completed on 10/6/21
+Date that I set up the GitHub Account: 10/6/21
+
+1. 
+cgriffin@T14sCG MINGW64 ~/assignment2/docs (master)
+$ git push
+
+Unhandled Exception: System.ComponentModel.Win32Exception: Invalid window handle
+   at MS.Win32.ManagedWndProcTracker.HookUpDefWindowProc(IntPtr hwnd)
+   at MS.Win32.ManagedWndProcTracker.OnAppDomainProcessExit()
+   at MS.Internal.ShutDownListener.HandleShutDown(Object sender, EventArgs e)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 548 bytes | 548.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/corybgriffin/assignment2.git
+   23545bf..0372727  master -> master
+
+2.
+11 commits have been done to the repository. I used git log to gather this information.
+
+3.
+The README.md file was last modified Mon Oct 4.
+
+cgriffin@T14sCG MINGW64 ~/assignment2/docs (master)
+$ git log -1 --format="%ad" -- ~/assignment2/README.md
+Mon Oct 4 19:30:07 2021 -0400
+
+4.
+Branches are used to isolate development work without affecting other branches in the repository.
+Branching is used in version control and software management to maintain stability while isolated
+changes are made to code. Branching facilitates the development of bug fixes, the addition of 
+new capabilities and the integration of new versions after they have been tested in isolation.
+
+5.
+The git log command displays committed snapshots. It lets you list the project history, filter it,
+and search for specific changes. While git status lets you inspect the working directory and the 
+staging area, git log only operates on the committed history.
+
+6.
+git log --follow -- Vehicle.h
+
+7.
+git log --all --grep='file'
+
+8.
+Inheritance is the procedure in which one class inherits the attributes and methods of another class.
+The class whose properties and methods are inherited is known as the Parent class. Polymorphism is a 
+feature of object-oriented programming languages that allows a specific routine to use variables of 
+different types at different times. Polymorphism is the ability of a programming language to present 
+the same interface for several different underlying data types. Encapsulation refers to the bundling 
+of data, along with the methods that operate on that data, into a single unit. Many programming 
+languages use encapsulation frequently in the form of classes.
+
+9.
+With the Integration manager workflow, each developer makes push to his/her own public repository
+and pull from the blessed/central repository. With the Dictator and Lieutenants workflow, only
+the dictator can push to the blessed central repository. Developers push changes to the lieutenants,
+lieutenants push them to the dictator, and the dictator pushes them to the blessed/central repository.
+
+10.
+With the centralized workflow, each developer has to pull any changes in the central repository and 
+resolve conflicts before pushing back to that repository. With the dictator and lieutenants workflow,
+they would just push their changes to the lieutenant, the lieutenant would solve any conflicts, the 
+lieutenant would push the changes to the dictator and the dictator would resolve conflict. The 
+dictator would then push the changes.
